@@ -1,0 +1,145 @@
+/*Tipo de letra*/
+* {
+    font-family: Merriweather;
+}
+
+
+
+
+
+/*CABECERA*/
+#Inicio {
+    background-color: rgba(29,29,29,1); /*rgba permite que el fondo sea translucido, el cuarto valor indica la opacidad con valor entre 0-1 siendo 1 opaco*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/*Logo*/
+#logo_cabecera{
+    text-align: left;
+}
+
+/*Título página*/
+#titulo_cabecera {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#fondo_imagen {
+    background-color: rgb(29,29,29);
+    padding: 1px;
+}
+
+
+
+
+
+/*Link PDF*/
+.enlace_pdf {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(255, 128, 0);
+    border: 2px solid rgb(29,29,29);
+}
+
+.enlace_pdf:link,
+.enlace_pdf:visited {
+    color: rgb(29,29,29);
+}
+
+.enlace_pdf:hover {
+    color: rgb(255, 128, 0);
+    background-color: rgb(29,29,29);
+}
+
+.enlace_pdf:active {
+    color: rgb(29,29,29);
+}
+
+
+
+/*Nombre vehículo*/
+h1 {
+    margin-bottom: 20px;
+}
+
+
+
+/*MENÚS*/
+.menu {
+    margin-bottom: 20px;
+}
+
+/*Menús desplegables*/
+.titulo {
+    background-color: rgb(29,29,29);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.titulo:hover {
+    background-color: rgb(255, 128, 0);
+}
+
+.opciones {
+    display: none;
+    background: #f9f9f9;
+    padding: 10px;
+}
+
+.opciones div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.opciones img {
+    border-radius: 6px;
+    width: 400px;
+    height: auto;
+    margin: 10px;
+}
+
+.opciones iframe {
+    margin-bottom: 10px;
+}
+
+.imagen_coche {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.video_manual {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+/* Footer */
+#footer {
+    background-color: rgb(29,29,29);
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+#footer a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(255,128,0);
+    font-weight: bold;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}

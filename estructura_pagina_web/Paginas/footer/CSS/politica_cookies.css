@@ -1,0 +1,81 @@
+/* Tipo de letra */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Merriweather;
+}
+
+/* Página */
+body {
+    background-color: rgb(245,245,245);
+    color: rgb(29,29,29);
+}
+
+/* Cabecera */
+#cabecera {
+    background-color: rgb(29,29,29);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#cabecera h1 {
+    color: rgb(255,128,0);
+}
+
+/* Contenido */
+#contenido_legal {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Apartados */
+.apartado {
+    margin-bottom: 35px;
+}
+
+.apartado h2 {
+    color: rgb(255,128,0);
+    border-bottom: 2px solid rgb(255,128,0);
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.apartado p {
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.apartado ul {
+    margin-left: 25px;
+    line-height: 1.8;
+}
+
+/* Footer */
+#footer {
+    background-color: rgb(29,29,29);
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+#footer a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(255,128,0);
+    font-weight: bold;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}

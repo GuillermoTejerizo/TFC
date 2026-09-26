@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="../CSS/Iniciar_style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <header id="Inicio">
+            <article id="logo_cabecera">
+                    <img src="../Imagenes/Logo/logo_sin_fondo.png" width="70"/>
+                </article>
+                <article id="titulo_cabecera">
+                    <a href="../index.html">
+                        <img src="../Imagenes/Titulo/titulo.png" width="150"/>
+                    </a>
+                </article>
+                <article id="texto_cabecera">
+                    <a href="../Paginas/iniciar_sesión.html"> <!-- <a> define el enlace al que va la imagen y dentro del elemento-->
+                        <img src="../Imagenes/imagen_login.png" width="70"/>
+                    </a>
+                </article>
+        </header>
+        <section id="inicio_sesion">
+            <section class="formulario">
+                <h1 id="titulo_iniciar_sesion">Iniciar sesión</h1>
+                <form action="../PHP/iniciar.php" method="POST">
+                    <input type="email" id="correo"  name="correo" placeholder="Correo electrónico" required/>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required/>
+                    <button type="submit">Entrar</button>
+                    <a id="registrarse" href="./registrarse.html">Regístrate aquí</a>
+                </form>
+            </section>
+        </section>
+        <footer id="footer">
+            <p>© 2026 ReparaTuCoche S.L. - Todos los derechos reservados.</p>
+            <a href="../index.html">Volver al inicio</a>
+        </footer>
+    </section>
+</body>
+</html>

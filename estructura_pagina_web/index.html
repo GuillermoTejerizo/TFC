@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ReparaTuCoche.net</title>
+        <link rel="stylesheet" href="./CSS/index_style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section id="fondo_principal">
+            <header id="cabecera">
+                <article id="logo_cabecera">
+                    <img src="./Imagenes/Logo/logo_sin_fondo.png" width="70" class="menu_logo" onclick="MenuLogo()"/>
+                    <nav id="menu_desplegable_logo">
+                        <a href="#subscripcion" class="celda_menu_desplegable">Subscripciones</a>
+                        <a href="#section_comentarios">Comentarios</a>
+                        <a href="#footer">Información legal</a>
+                    </nav>
+                </article>
+                <article id="titulo_cabecera">
+                    <img src="./Imagenes/Titulo/titulo.png" width="150"/>
+                </article>
+                <article id="texto_cabecera">
+                    <img src="./Imagenes/imagen_login.png" width="70" class="menu_inicio" onclick="MenuInicio()"/>
+                    <nav id="menu_desplegable_inicio">
+                        <a href="./Paginas/iniciar_sesión.html">Iniciar sesión</a>
+                        <a href="./Paginas/registrarse.html">Registrarse</a>
+                    </nav>
+                </article>
+                
+            </header>
+            <!--header sirve para colocar la cabezera de la página-->
+            <!--section sirve para dividir el contenido en secciones-->
+            <section id="fondo_presentacion">
+                <section id="presentacion">
+                    <img id="titulo_pagina" src="./Imagenes/Titulo/titulo_con_eslogan.png" width="340"/>
+                    <article id="recuadro_presentacion">
+                        <h2 id="titulo_presentacion">Bienvenidos a <span style="color:orange; font-size: 30px; font-weight: 50px;">ReparaTuCoche</span></h2>
+                        <p class="texto_presentacion">Aquí encontrarás <span class="negrita">videotutoriales fáciles y prácticos</span> para reparar y cambiar piezas de tu coche según su marca, modelo y año.<br>
+                            Aprende paso a paso, ahorra dinero y dale a tu vehículo el cuidado que merece. <!--<br> permite hacer un salto de línea-->
+                        </p>
+                        <h2 id="titulo_presentacion">¿Qué ofrecemos?</h2>
+                        <p class="texto_presentacion">
+                            Aquí vas a encontrar un espacio pensado para hacerte la vida más fácil cuando se trata de cuidar tu coche. Nuestro servicio te ofrece <span class="negrita">videotutoriales claros y sencillos</span>, donde te mostramos paso a paso cómo reparar o cambiar piezas según la marca, modelo y año de tu vehículo.<br>
+                            La idea es que, aunque no seas experto en mecánica, puedas aprender y animarte a realizar esas reparaciones tú mismo, ahorrando tiempo y dinero. Todo explicado de forma práctica y accesible, para que tengas la confianza de que lo estás haciendo bien.<br>
+                            Gracias por visitarnos. ¡Explora, aprende y descubre lo fácil que puede ser darle una mano a tu coche!
+                        </p>
+                    </article>
+                </section>
+            </section>
+            <section id="Log_index">
+                <section id="texto_inicio_sesión">
+                    <h1 id="titulo_texto_inicio_sesión">Empieza con las modificaciones</h1>
+                    <p id="texto_texto_inicio_sesión">Inicia sesión o registrate para poder acceder a la gran cantidad de contenido sobre tu vehículo y empezar a reparar tu coche.</p>
+                </section>
+                <ul id=tabla_inicio_sesion>
+                    <li id="celda_inicio_sesion"><a id="boton_inicio_sesion" href="./Paginas/iniciar_sesión.html"><p>Iniciar sesión</p></a></li> <!--href indica la ruta web o local de una página (en este caso otra página del servidor)-->
+                    <li id="celdas_subscripcion"><a id="texto_celda_sub" href="#subscripcion"><p>¿Aún no tienes cuenta?</p></a></li> <!--dentro de la etiqueta se puede añadir target="_blank" para abrir en otra pestaña nueva-->
+                </ul>               
+            </section>
+            <section id="section_comentarios">
+                <div class="cabecera_comentarios">
+                    <h1>Así debería ser</h1>
+                    <p>Nuestros clientes nos califican cómo 'Excelente'</p>
+                </div>
+                <div id="contenedor_comentarios">
+                    <button class="flecha_izquierda">&#x276E;</button>
+                    <div id="contenedor_cinta">
+                        <div class="cinta" id="div_comnetarios">
+                            <article class="recuadro_comentario">
+                                <h3 class="nombre_usuario">Alberto32@gmail.com</h3>
+                                <p class="texto_comentario">"Contenido muy completo, explicaciones claras y fáciles de entender"</p>
+                            </article>
+                            <article class="recuadro_comentario">
+                                <h3 class="nombre_usuario">mario_graciaGU@gmail.com</h3>
+                                <p class="texto_comentario">"Siempre he querido saber cómo cambiar la carrocería del coche, y gracias a ReparaTuCoche he podido hacerlo en mi propia casa"</p>
+                            </article>
+                            <article class="recuadro_comentario">
+                                <h3 class="nombre_usuario">al3jandr0_67@gmail.com</h3>
+                                <p class="texto_comentario">"Hay contenido breve para cosas rápidas, cómo cambio de pastillas de freno, y siempre viene bien"</p>
+                            </article>
+                            <article class="recuadro_comentario">
+                                <h3 class="nombre_usuario">SergioMartin97@gmail.com</h3>
+                                <p class="texto_comentario">"Quiero hacer un coche proyecto, un civic EK9, y esta página me ayuda a tener el contenido junto, accesible y ordenado"</p>
+                            </article>
+                            <article class="recuadro_comentario">
+                                <h3 class="nombre_usuario">cosminBMW330d@gmail.com</h3>
+                                <p class="texto_comentario">"Tengo un BMW 330d y siempre he tenido problemas con el freno de mano, gracias a esta página he encontrado una forma de solucionarlo"</p>
+                            </article>
+                            <article class="recuadro_comentario">
+                                <h3 class="nombre_usuario">Alberto32@gmail.com</h3>
+                                <p class="texto_comentario">"Contenido muy completo, explicaciones claras y fáciles de entender"</p>
+                            </article>
+                            <article class="recuadro_comentario">
+                                <h3 class="nombre_usuario">mario_graciaGU@gmail.com</h3>
+                                <p class="texto_comentario">"Siempre he querido saber cómo cambiar la carrocería del coche, y gracias a ReparaTuCoche he podido hacerlo en mi propia casa"</p>
+                            </article>
+                            <article class="recuadro_comentario">
+                                <h3 class="nombre_usuario">al3jandr0_67@gmail.com</h3>
+                                <p class="texto_comentario">"Hay contenido breve para cosas rápidas, cómo cambio de pastillas de freno, y siempre viene bien"</p>
+                            </article>
+                            <article class="recuadro_comentario">
+                                <h3 class="nombre_usuario">SergioMartin97@gmail.com</h3>
+                                <p class="texto_comentario">"Quiero hacer un coche proyecto, un civic EK9, y esta página me ayuda a tener el contenido junto, accesible y ordenado"</p>
+                            </article>
+                            <article class="recuadro_comentario">
+                                <h3 class="nombre_usuario">cosminBMW330d@gmail.com</h3>
+                             <p class="texto_comentario">"Tengo un BMW 330d y siempre he tenido problemas con el freno de mano, gracias a esta página he encontrado una forma de solucionarlo"</p>
+                            </article>
+                        </div>
+                    </div>
+                    <button class="flecha_derecha">&#x276F;</button>
+                </div>
+            </section>
+            <section id="subscripcion">
+                <h1 id="titulo_subscripcion">Plan de Subscripción</h1><br>
+                <article class="tabla_subscripcion">
+                    <ul class="lista_subs">
+                        <li class="planning">15 Días</li>
+                        <li class="precio">4.99€</li>
+                        <li class="final"><a class="boton_sub" href="./Paginas/registrarse.html">Seleccionar</a></li>
+                        <li class="Descuento"><p>Precio base</p></li>
+                    </ul>
+                </article>
+                <article class="tabla_subscripcion">
+                    <ul class="lista_subs">
+                        <li class="planning">1 Mes</li>
+                        <li class="precio">8.99€</li>
+                        <li class="final"><a class="boton_sub" href="./Paginas/registrarse.html">Seleccionar</a></li>
+                        <li class="Descuento"><p>Ahorra 10%</p></li>
+                    </ul>
+                </article>
+                <article class="tabla_subscripcion">
+                    <ul class="lista_subs">
+                        <li class="planning">3 Meses</li>
+                        <li class="precio">24.99€</li>
+                        <li class="final"><a class="boton_sub" href="./Paginas/registrarse.html">Seleccionar</a></li>
+                        <li class="Descuento"><p>Ahorra 17%</p></li>
+                    </ul>
+                </article>
+                <article class="tabla_subscripcion">
+                    <ul class="lista_subs">
+                        <li class="planning">6 Meses</li>
+                        <li class="precio">44.99€</li>
+                        <li class="final"><a class="boton_sub" href="./Paginas/registrarse.html">Seleccionar</a></li>
+                        <li class="Descuento"><p>Ahorra 25%</p></li>
+                    </ul>
+                </article>
+                <article class="tabla_subscripcion">
+                    <ul class="lista_subs">
+                        <li class="planning">12 Meses</li>
+                        <li class="precio">79.99€</li>
+                        <li class="final"><a class="boton_sub" href="./Paginas/registrarse.html">Seleccionar</a></li>
+                        <li class="Descuento"><p>Ahorra 34%</p></li>
+                    </ul>
+                </article>
+            </section>
+            <footer id="footer">
+                <section id="footer_principal">
+                    <article class="footer_columna">
+                        <h3>Información Legal</h3>
+                        <ul>
+                            <li><a href="./Paginas/footer/HTML/aviso_legal.html">Aviso Legal</a></li>
+                            <li><a href="./Paginas/footer/HTML/politica_privacidad.html">Política de Privacidad</a></li>
+                            <li><a href="./Paginas/footer/HTML/politica_cookies.html">Política de Cookies</a></li>
+                            <li><a href="./Paginas/footer/HTML/terminos_condiciones.html">Términos y Condiciones</a></li>
+                        </ul>
+                    </article>
+                    <article class="footer_columna">
+                        <h3>Contacto</h3>
+                        <p><strong>Teléfono:</strong> +34 9XX XXX XXX</p>
+                        <p><strong>Email:</strong>
+                            soporte@reparatucoche.net
+                        </p>
+                        <p><strong>Dirección:</strong><br>
+                            Plaza de España, 8<br>
+                            19001 Guadalajara (España)</p>
+                    </article>
+                    <article class="footer_columna">
+                        <h3>Empresa</h3>
+                        <p><strong>Razón social:</strong></p>
+                        <p>ReparaTuCoche S.L.</p>
+                        <p><strong>CIF:</strong></p>
+                        <p>B12345678</p>
+                        <p><strong>Domicilio fiscal:</strong></p>
+                        <p>Plaza de España, 8</p>
+                    </article>
+                    <article class="footer_columna">
+                        <h3>Enlaces rápidos</h3>
+                        <ul>
+                            <li><a href="#cabecera">Inicio</a></li>
+                            <li><a href="#section_comentarios">Comentarios</a></li>
+                            <li><a href="#subscripcion">Subscripciones</a></li>
+                            <li><a href="./Paginas/iniciar_sesión.html">Iniciar sesión</a></li>
+                        </ul>
+                    </article>
+                </section>
+                <section id="footer_creditos">
+                    <p>© 2026 ReparaTuCoche.net - Todos los derechos reservados</p>
+                    <p>Desarrollo Web: Guillermo Tejerizo</p>
+            </footer>
+            <!--footer sirve para colocar el pie de página-->
+        </section>
+        <script src="./JavaScript/index_JS.js"></script>
+    </body>
+</html>

@@ -1,0 +1,129 @@
+/*Tipo de letra*/
+* {
+    font-family: Merriweather;
+}
+
+
+
+
+
+/*CABECERA*/
+#cabecera {
+    background-color: rgba(29,29,29,1); /*rgba permite que el fondo sea translucido, el cuarto valor indica la opacidad con valor entre 0-1 siendo 1 opaco*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/*Logo*/
+#logo_cabecera{
+    text-align: left;
+}
+
+/*Título página*/
+#titulo_cabecera {
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*Imágen Login*/
+#texto_cabecera {
+    color: white;
+    text-align: right;
+}
+
+
+
+
+
+/*CREAR CUENTA*/
+#crear_cuenta {
+    margin: 0;
+    padding: 0;
+    height: 84vh;
+    display: flex;
+    justify-content: center;  /* Centrar horizontalmente */
+    align-items: center;      /* Centrar verticalmente */
+}
+
+/*Formulario crear cuenta*/
+.formulario {
+    background: rgba(29,29,29,1);
+    padding: 40px;
+    border-radius: 12px;
+    width: 350px;
+    text-align: center;
+}
+
+/*Título formulario*/
+#titulo {
+    margin-bottom: 25px;
+    color: rgb(255, 128, 0);
+}
+
+/*Campos de formulario*/
+#correo,
+#contrasena,
+#confirmar_contrasena {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/*Selección subscripción*/
+#subscripciones {
+    text-align: left;
+    margin-top: 15px;
+    background: rgba(45,45,45,1);
+    padding: 10px;
+    border-radius: 6px;
+}
+
+#titulo_subscripcion {
+    color: rgb(255, 128, 0);
+}
+
+.tipo_subscripcion {
+    display: block;
+    margin: 5px 0;
+    color: rgb(255, 128, 0)
+}
+
+/*Botón registrarse*/
+#boton_registrarse {
+    width: 100%;
+      padding: 10px;
+      background-color: rgb(255, 128, 0);
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 15px;
+}
+
+#boton_registrarse:hover {
+    background-color: rgb(255, 168, 0);
+}
+
+/* Footer */
+#footer {
+    background-color: rgb(29,29,29);
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+#footer a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(255,128,0);
+    font-weight: bold;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}

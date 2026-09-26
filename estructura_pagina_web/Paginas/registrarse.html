@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="../CSS/registrarse_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="cabecera">
+        <article id="logo_cabecera">
+            <img src="../Imagenes/Logo/logo_sin_fondo.png" width="70"/>
+        </article>
+        <article id="titulo_cabecera">
+            <a href="../index.html">
+                <img src="../Imagenes/Titulo/titulo.png" width="150"/>
+            </a>
+        </article>
+        <article id="texto_cabecera">
+            <a href="../Paginas/iniciar_sesión.html"> <!-- <a> define el enlace al que va la imagen y dentro del elemento-->
+                <img src="../Imagenes/imagen_login.png" width="70"/>
+            </a>
+        </article>
+    </header>
+    <section id="crear_cuenta">
+        <section class="formulario">
+            <h1 id="titulo">Crear cuenta</h1>
+            <form action="../PHP/registro.php" method="POST">
+                <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+                <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" placeholder="Confirmar contraseña" required>
+                <article id="subscripciones">
+                    <p id="titulo_subscripcion"><strong>Tipo de suscripción:</strong></p>
+                    <label class="tipo_subscripcion"><input type="radio" name="suscripcion" value="15D" required> 15 Días / 4.99€</label>
+                    <label class="tipo_subscripcion"><input type="radio" name="suscripcion" value="01M"> 1 Mes / 8.99€</label>
+                    <label class="tipo_subscripcion"><input type="radio" name="suscripcion" value="03M"> 3 Meses / 24.99€</label>
+                    <label class="tipo_subscripcion"><input type="radio" name="suscripcion" value="06M"> 6 Meses / 44.99€</label>
+                    <label class="tipo_subscripcion"><input type="radio" name="suscripcion" value="12M"> 12 Meses / 79.99€</label>
+                </article>
+                <button id="boton_registrarse" type="submit">Registrarse</button>
+            </form>
+        </section>
+    </section>
+    <footer id="footer">
+        <p>© 2026 ReparaTuCoche S.L. - Todos los derechos reservados.</p>
+        <a href="../index.html">Volver al inicio</a>
+    </footer>
+</body>
+</html>

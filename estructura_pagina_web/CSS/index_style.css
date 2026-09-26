@@ -1,0 +1,626 @@
+/*Tipo de letra*/
+* {
+    font-family: Merriweather;
+}
+
+
+
+
+
+
+
+/*LINKS*/
+/*Los links se referencian con a:*/
+
+a:link { /*Indica un link que no ha sido usado*/
+    color: blue;
+}
+
+a:visited { /*Indica un link que ha sido visitado*/
+    color: blue;
+}
+
+a:hover { /*Indica un link cuando se pasa el cursor por encima*/
+    color: black;
+}
+
+a:active { /*Indica el link cnuando está siendo presionado*/
+    color: blueviolet;
+}
+
+
+
+
+
+
+
+/*FONDO DE LA PÁGINA*/
+/*Fondo pricipal*/
+#fondo_principal {
+    background-color: rgb(255,255,255); /*Indica el color del fondo del elemento*/
+}
+
+
+
+
+
+
+
+/*CABECERA*/
+#cabecera {
+    background-color: rgba(29,29,29,1); /*rgba permite que el fondo sea translucido, el cuarto valor indica la opacidad con valor entre 0-1 siendo 1 opaco*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/*Logo*/
+#logo_cabecera{
+    position: relative;
+}
+
+/*Título página*/
+#titulo_cabecera {
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*Imágen Login*/
+#texto_cabecera {
+    text-align: right;
+    position: relative;
+}
+
+/*Menús desplegables*/
+nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgb(255, 128, 0);
+    border: 1px solid rgb(29,29,29);
+    border-radius: 6px;
+    display: none; /* Oculto por defecto */
+    min-width: 150px;
+    z-index: 10; /*Hace que el menú quede encima de los demás elementos de la página*/
+}
+
+#menu_desplegable_inicio {
+  position: absolute;
+  top: 100%;
+  right: 0;        /* <-- Esto lo pega al borde derecho del contenedor */
+  left: auto;      /* Cancelar el left:0 que podría venir por defecto */
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid rgb(255, 128, 0);
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:link {
+    color: rgb(29,29,29);
+}
+
+nav a:visited {
+    color: rgb(29,29,29);
+}
+
+nav a:hover {
+    background-color: rgb(29,29,29);
+    color: rgb(255, 128, 0);
+}
+
+nav a:active {
+    background-color: rgb(184, 102, 20);
+    color: rgb(29,29,29);
+}
+
+.menu_logo, .menu_inicio {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/*Presentación*/
+#fondo_presentacion {
+    background-image: url(../Imagenes/Fondos/reparar-coches-en-la-calle-2.jpg); /*hacer que el fondo sea una imagen*/
+    background-size: cover; /*indica el tamaño de la imagen con el fondo (En este caso cover hace que se adapte al tamaño)*/
+    background-repeat: no-repeat; /*hace que no se repita la imagen del fondo*/
+    background-position-x: center;
+    padding-bottom: 50px;
+}
+
+#presentacion {
+    text-align: center;
+}
+
+#titulo_pagina {
+    margin-top: 10px;
+}
+
+#recuadro_presentacion {
+    background-color: rgba(255,255,255,0.45);
+    margin-top: 20px;
+    margin-left: 50px; /*Indica el margen de un elemento*/
+    margin-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid black; /*Indica el borde que separa el margin del padding*/
+    border-radius: 10px;
+}
+
+#titulo_presentacion {
+    text-align: center; /*Indica la alineación del texto*/
+    text-shadow: 3px 4px 4px rgb(50,50,50); /*Indica que el texto tenga sombra, siendo el primer valor el desplazamiento a la derecha y el segundo hacia abajo, el tercer valor indica el difuminado*/
+}
+
+.texto_presentacion {
+    /*font-family: Merriweather;*/
+    text-align: center;
+    font-weight: bold;
+}
+
+.negrita {
+    background-color: orange;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/*TABLA INICIO SESIÓN*/
+#Log_index {
+    background-color: rgb(29,29,29);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#texto_inicio_sesión {
+    background-color: rgba(255,255,255,0.45);
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid rgba(255,255,255,0.45); 
+    border-radius: 10px;   
+}
+
+#titulo_texto_inicio_sesión {
+    text-align: center;
+    color: rgb(255, 128, 0);
+    text-shadow: 3px 4px 4px rgb(50,50,50);
+}
+
+#texto_texto_inicio_sesión {
+    text-align: center;
+    color: white;
+}
+
+#tabla_inicio_sesion {
+    list-style-type: none;
+    margin: 0 auto;
+    padding-left: 0%;
+    text-align: center;
+}
+
+/*Botón inicio sesión*/
+#celda_inicio_sesion {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 128, 0);
+    border-style: solid;
+    border-color: rgb(184, 102, 20);
+    border-radius: 25px;
+}
+
+#celda_inicio_sesion:hover {
+    background-color: rgb(29,29,29);
+}
+
+#boton_inicio_sesion {
+    margin: 0px;
+}
+
+#boton_inicio_sesion:link {
+    color: black;
+}
+
+#boton_inicio_sesion:visited {
+    color: black;
+}
+
+#boton_inicio_sesion:hover {
+    color: rgb(255, 128, 0);
+}
+
+#boton_inicio_sesion:active {
+    color: blueviolet;
+}
+
+/*Botón ir a las subscripciones*/
+#celdas_subscripcion {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-color: rgb(184, 102, 20);
+    border-radius: 25px;
+}
+
+#celdas_subscripcion:hover {
+    background-color: rgb(255, 128, 0);
+}
+
+#texto_celda_sub:link {
+    color: rgb(255, 128, 0);
+}
+
+#texto_celda_sub:visited{
+    color: rgb(255, 128, 0);
+}
+
+#texto_celda_sub:hover {
+    color: black;
+}
+
+#texto_celda_sub:active {
+    color: blueviolet;
+}
+
+
+
+
+
+
+
+
+/*COMENTARIOS*/
+#contenedor_comentarios {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+/*Título comentarios*/
+.cabecera_comentarios {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cabecera_comentarios h1 {
+    color: rgb(255,128,0);
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.cabecera_comentarios p {
+    color: rgb(80,80,80);
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/*Flechas*/
+.flecha_izquierda,
+.flecha_derecha {
+    cursor: pointer;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(29,29,29);
+    color: rgb(255,128,0);
+    border: 2px solid rgb(255,128,0);
+    border-radius: 50%;
+    user-select: none;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.flecha_izquierda:hover,
+.flecha_derecha:hover {
+    background-color: rgb(255,128,0);
+    color: rgb(29,29,29);
+}
+
+/*Posición flechas*/
+.flecha_izquierda {
+    left: 10px;
+}
+
+.flecha_derecha {
+    right: 10px;
+}
+
+/*Flecha desactivada*/
+.flecha_izquierda.disabled,
+.flecha_derecha.disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+/*Carrusel de comentarios*/
+#contenedor_cinta {
+    overflow: hidden;
+    width: 100%;
+}
+
+.cinta {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.4s ease;
+    width: 100%;
+}
+
+.cinta.rebote {
+    transition: transform 0.15s ease;
+}
+
+/*Tarjetas de comentarios*/
+.recuadro_comentario {
+    min-width: 280px;
+    max-width: 280px;
+    padding: 20px;
+    background-color: rgb(29,29,29);
+    border: 2px solid rgb(184,102,20);
+    border-radius: 15px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.recuadro_comentario:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255,128,0,0.4);
+}
+
+/*Nombre usuario*/
+.nombre_usuario {
+    color: rgb(255,128,0);
+    border-bottom: 1px solid rgb(184,102,20);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    word-break: break-word;
+}
+
+/*Texto comentario*/
+.texto_comentario {
+    color: white;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/*Valoración con estrellas*/
+.valoracion {
+    color: gold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/*SUBSCRIPCIONES*/
+#subscripcion {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*Título*/
+#titulo_subscripcion {
+    color: rgb(255,128,0);
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/*Tablas*/
+.tabla_subscripcion {
+    display: inline-block; /*inline-block permite mantener bloqueada la forma de los componentes del elemento*/
+}
+
+.lista_subs {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(184, 102, 20);
+    background-color: rgb(29,29,29);
+    width: 200px;
+    height: 100%;
+    list-style-type: none; /*Hace que no aparezcan los puntos de la lista*/
+    text-align: center;
+    margin-inline: 20px;
+    padding-left: 0%;
+}
+
+.planning {
+    color: rgb(184, 102, 20);
+    font-size: 30px;
+}
+
+.precio {
+    margin-top: 25px;
+    font-size: 40px;
+    font-weight: bolder; /*Indica el grosor del texto*/
+    color: rgb(51, 153, 255);
+}
+
+.final {
+    margin-top: 25px;
+}
+
+.Descuento {
+    background-color: rgb(255, 128, 0);
+    border-top-style: solid;
+    border-color: rgb(184, 102, 20);
+    height: 50px;
+    margin-top: 25px;
+}
+
+/*Botón subscribirse*/
+.boton_sub {
+    border-radius: 5px;
+    background-color: rgb(255, 128, 0);
+    padding: 5px;
+}
+
+.boton_sub:link {
+    color: black;
+}
+
+.boton_sub:visited {
+    color: black;
+}
+
+.boton_sub:hover {
+    color: blue;
+    background-color: gold;
+}
+
+.boton_sub:active {
+    color: blueviolet;
+}
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+#footer {
+    margin-top: 60px;
+}
+
+#footer_principal {
+    background-color: rgb(29,29,29);
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 40px;
+}
+
+.footer_columna h3 {
+    color: rgb(255,128,0);
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgb(255,128,0);
+    padding-bottom: 5px;
+}
+
+.footer_columna ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer_columna li {
+    margin-bottom: 10px;
+}
+
+.footer_columna a {
+    text-decoration: none;
+}
+
+.footer_columna a:link,
+.footer_columna a:visited {
+    color: white;
+}
+
+.footer_columna a:hover {
+    color: rgb(255,128,0);
+}
+
+.footer_columna p {
+    line-height: 1.6;
+}
+
+#footer_creditos {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+#footer_creditos p {
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*APUNTES*/
+/*
+SELECTORES
+Los elementos generales del código HTML se ponen tal cual, ejmp:
+                table, th, td {
+                    border: 1px solid black
+                }
+
+Los id se apuntan con # delante del nombre, ejmp:
+                #tabla_inicio_sesion {
+                    border: 1px solid blue
+                }
+
+Las clases se apuntan con . delante del nombre, ejmp:
+                .celdas_subscripcion {
+                    border: 1px solid blue
+                }
+
+Si queremos indicar que solo un elemento determinado que contenga una clase sea modificado, 
+se añadirá delante del símbolo correspondiente, ejmp:
+                h1.celdas_subscripcion {
+                    border: 1px solid blue
+                }
+
+El orden en el que se escriba el código afectará al resultado, siendo que si hay dos indicaciones
+para un elemento, se aplicará la última escrita.
+
+Si queremos modificar un elemento en concreto que está dentro de otro, escribimos el elemento padre 
+y después el elemento hijo, ejmp:
+                header a {
+                    border: 1px solid blue
+                }
+    En este caso indicamos que queremos modificar los elementos "a" que están dentro de "header"
+Si tambien queremos que sea a mas elementos hijos del elemento padre, separamor por "," y volvemos 
+a escribir el elemento padre e hijo, ejmp: "header a, header h1 {}"
+
+Para seleccionar todos los elementos del HTML usamos: "* {}" (NO AFECTA SI YA HAY UN SELECTOR CON VALOR, 
+AUNQ ESTÉ ESCRITO AL FINAL DEL DOCUMENTO)
+*/
